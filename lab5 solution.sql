@@ -93,13 +93,13 @@ select St_Fname,Dept_Manager from Student
 inner join Department
 on Student.Dept_Id = Department.Dept_Id
 
--- Write a query to select the highest two salaries in Each Department for instructors who have salaries. ìusing one of Ranking Functionsî
+-- Write a query to select the highest two salaries in Each Department for instructors who have salaries. ‚Äúusing one of Ranking Functions‚Äù
 select * from (
 select *, rank() over(partition by dept_id order by salary desc ) as 'top_salaries' from Instructor) as top_ins
 where  top_salaries <=2
 order by Dept_Id
 
--- Write a query to select a random  student from each department.  ìusing one of Ranking Functionsî
+-- Write a query to select a random  student from each department.  ‚Äúusing one of Ranking Functions‚Äù
 
 select top(1) * from Student
 order by newid()

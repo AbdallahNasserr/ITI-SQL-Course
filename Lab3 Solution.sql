@@ -99,7 +99,7 @@ values(30,102672,112233,3000)
 
 /*Insert another employee with personal 
 data your friend as new employee in department 
-number 30, SSN = 102660, but don’t enter any value 
+number 30, SSN = 102660, but donâ€™t enter any value 
 for salary or manager number to him.*/
 insert into Employee(Dno,SSN)
 values(30,102660)

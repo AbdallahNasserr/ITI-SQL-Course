@@ -9,6 +9,9 @@ where SSN = 3
 
 select * from Employee
 
+
+
+
 create table emp(
 eid  int primary key, 
 SSN int, 
